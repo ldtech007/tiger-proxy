@@ -1,0 +1,11 @@
+[Unit]
+Description=http proxy Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3  /root/http-proxy/http-server.py
+WorkingDirectory=/root/http-proxy
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

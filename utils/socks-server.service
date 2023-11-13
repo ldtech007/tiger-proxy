@@ -1,0 +1,11 @@
+[Unit]
+Description=socks5 proxy Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3  /root/socks-proxy/socks-server.py
+WorkingDirectory=/root/socks-proxy
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
