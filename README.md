@@ -16,7 +16,7 @@ python generate_key.py
 ```
 3. 可以直接修改代码替换server和client监听的地址和端口。
 
-4. 运行服务端，在vps上运行http-server.py 或 socks-client.py
+4. 运行服务端，在vps上运行http-server.py 或 socks-server.py
 
 ```
 cd http-proxy
@@ -37,6 +37,6 @@ python socks-client.py
 
 ## 其他
 
-还有一些可以完善的，比如secret_sed、ip、port等从代码里抽出来放到配置文件中，增加用户认证的逻辑，支持ipv6等。有兴趣的同学可以参与进来，提交代码。
+还有一些可以完善的，比如secret_sed、ip、port等从代码里抽出来放到配置文件中，增加用户认证的逻辑，支持ipv6等。有兴趣的同学可以参与进来，提交你的代码。
 
-在普通的pc和linux虚拟机中测试，速度还是很快的，在嵌入式设备上cpu对python的支持就没那么好了，cpu对python的解释比较慢，也不建议大家在嵌入式设备上运行。
+在普通的pc和linux虚拟机中速度还是很快的，在嵌入式设备上cpu对python的支持就没那么好了，嵌入式设备的cpu对python的解释比较慢，也不建议大家在嵌入式设备上运行。
